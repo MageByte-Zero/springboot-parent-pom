@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /rabbitmq
+  port: 9004
+spring:
+  application:
+    name: rabbitmq
+  rabbitmq:
+    host: 172.16.90.111
+    virtual-host: /crawl
+    username: fengsibo
+    password: fengsibo
+    port: 5672
+    # 消息失败返回，比如路由不到队列时触发回调
+    publisher-returns: true
+    # 消息正确发送确认
+    publisher-confirms: true
+    template:
+      retry:
+        enabled: true
+        initial-interval: 2s
+    listener:
+      simple:
+        # 手动ACK 不开启自动ACK模式,目的是防止报错后未正确处理消息丢失 默认 为 none
+        acknowledge-mode: manual

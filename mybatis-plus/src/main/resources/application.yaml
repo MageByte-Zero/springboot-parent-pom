@@ -1,0 +1,30 @@
+server:
+  servlet:
+    context-path: /mybatis
+  port: 9002
+spring:
+  application:
+    name: mybatis-plus
+  datasource:
+    dynamic:
+      hikari:
+        driver-class-name: com.mysql.jdbc.Driver
+      datasource:
+        master:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/vip?useUnicode=true&characterEncoding=utf8&useSSL=false
+        slave:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/vip?useUnicode=true&characterEncoding=utf8&useSSL=false
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+  type-aliases-package: zero.springboot.study.mybatisplus.domain
+  configuration:
+    map-underscore-to-camel-case: true

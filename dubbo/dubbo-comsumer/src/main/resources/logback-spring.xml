@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- scan：当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true。
+    scanPeriod：设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。 
+ -->
+<configuration scan="true" scanPeriod="60 seconds">
+
+	<property resource="application.yaml" />
+
+	<!-- 日志输出格式 -->
+	<property name="logPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%t] - %logger-%line %msg %n" />
+
+	<!-- scope=context：该属性在本配置内使用有效，source为在application.properties中定义的信息，defaultValue为默认值 -->
+	<springProperty name="logPath" source="log.path" defaultValue="logs" />
+	<springProperty name="logName" source="spring.application.name" defaultValue="lls-log" />
+
+	<!-- 控制台输出 -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 输出大于等于配置级别的日志到指定stdout.log文件-->
+	<appender name="allAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<!-- 日志文件名称 -->
+		<file>${logPath}/${logName}/${logName}-stdout.log</file>
+		<!-- 每天生成日志文件，文件大小超过200M则新生成一个文件，文件保存最长30天 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/${logName}-stdout.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<!-- 日志文件保存日期最长为30天 -->
+			<MaxHistory>30</MaxHistory>
+			<!-- 日志文件最大为200MB -->
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+	</appender>
+
+	<!-- 输出info级别日志到指定info.log文件-->
+	<appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<file>${logPath}/${logName}/${logName}-info.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/${logName}-info.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+		<!-- 过滤器，可以过滤掉不符合条件的日志，INFO级别的日志被处理，其它的拒绝 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- 输出warn级别日志到指定warn.log文件-->
+	<appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<file>${logPath}/${logName}/${logName}-warn.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/${logName}-warn.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+		<!-- 过滤器，可以过滤掉不符合条件的日志，WARN级别的日志被处理，其它的拒绝 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- 输出error级别日志到指定error.log文件-->
+	<appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<file>${logPath}/${logName}/${logName}-error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/${logName}-error.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+		<!-- 过滤器，可以过滤掉不符合条件的日志，ERROR级别的日志被处理，其它的拒绝 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- 输出指定级别日志到指定system.log文件-->
+	<appender name="invokerLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<file>${logPath}/${logName}/invoker.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/invoker.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+	</appender>
+
+	<!-- 输出sql日志到指定sql.log文件 -->
+	<appender name="sqlAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<!-- logPattern属性在logback-common.xml配置，也可以在此自定义 -->
+			<pattern>${logPattern}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+		<file>${logPath}/${logName}/${logName}-sql.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/backup/${logName}/${logName}-sql.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>200MB</maxFileSize>
+		</rollingPolicy>
+	</appender>
+
+
+    <!-- sql日志打印定义 start-->
+	<!-- additivity: 是否向上级logger传递打印信息。默认是true -->
+	<logger name="org.mybatis" level="DEBUG" additivity="false">
+		<appender-ref ref="sqlAppender" />
+		<appender-ref ref="stdout" />
+	</logger>
+	<logger name="com.alibaba.druid" level="DEBUG" additivity="false">
+		<appender-ref ref="sqlAppender" />
+		<appender-ref ref="stdout" />
+	</logger>
+	<logger name="java.sql" level="DEBUG" additivity="false">
+		<appender-ref ref="sqlAppender" />
+		<appender-ref ref="stdout" />
+	</logger>
+	<logger name="com.baomidou.mybatisplus" level="DEBUG" additivity="false">
+		<appender-ref ref="sqlAppender" />
+		<appender-ref ref="stdout" />
+	</logger>
+	<!-- 本项目定义Mapper接口的包 -->
+	<!--<logger name="com.lls.fk.service.mapper" level="DEBUG" additivity="false">
+		<appender-ref ref="sqlAppender" />
+		<appender-ref ref="stdout" />
+	</logger>-->
+	<!--sql日志打印定义  end -->
+
+	<root level="INFO">
+		<appender-ref ref="stdout" />
+		<!--<appender-ref ref="sqlAppender" />-->
+		<appender-ref ref="allAppender" />
+		<appender-ref ref="infoAppender" />
+		<appender-ref ref="warnAppender" />
+		<appender-ref ref="errorAppender" />
+	</root>
+
+</configuration>

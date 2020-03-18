@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /web-core
+  port: 9003
+spring:
+  application:
+    name: web-core

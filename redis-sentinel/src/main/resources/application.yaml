@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /redis
+  port: 9001
+spring:
+  application:
+    name: redis-sentinel
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+    sentinel:
+      master: mymaster
+      nodes:
+        - 127.0.0.1:26379
+        - 127.0.0.1:26380
+        - 127.0.0.1:26381
+

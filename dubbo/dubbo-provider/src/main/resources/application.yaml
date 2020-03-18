@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: dubbo-provider
+#自定义配置
+embedded:
+  zookeeper:
+    port: 2181
+
+dubbo:
+  registry:
+    id: dubbo-provider
+    address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
+    group: local
+  application:
+    name: dubbo-provider
+    id: dubbo-provider
+    logger: slf4j
+    qosEnable: true
+    qosPort: 22224
+    qosAcceptForeignIp: false
+  protocol:
+    port: -1
+    name: dubbo
+  scan:
+    base-packages: com.zero.provider.impl

@@ -1,0 +1,27 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: dubbo-comsumer
+#自定义配置
+embedded:
+  zookeeper:
+    port: 2181
+
+dubbo:
+  registry:
+    id: dubbo-comsumer
+    address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
+    group: local
+  application:
+    name: dubbo-comsumer
+    id: dubbo-comsumer
+    logger: slf4j
+    qosEnable: false
+    qosPort: 22223
+    qosAcceptForeignIp: false
+  protocol:
+    port: -1
+    name: dubbo
+  consumer:
+    check: false

@@ -1,0 +1,137 @@
+2019-04-26 15:35:03.240 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 7536 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-26 15:35:03.283 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-26 15:35:04.403 [WARN ] [main] - org.springframework.web.context.support.GenericWebApplicationContext-557 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'queue' defined in class path resource [zero/springboot/study/rabbitmq/config/SimpleConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=simpleConfig; factoryMethodName=queue; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [zero/springboot/study/rabbitmq/config/SimpleConfig.class]] for bean 'queue': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=directConfig; factoryMethodName=queue; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [zero/springboot/study/rabbitmq/config/DirectConfig.class]] bound. 
+2019-04-26 15:35:04.445 [INFO ] [main] - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener-142 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2019-04-26 15:35:04.450 [ERROR] [main] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter-42 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'queue', defined in class path resource [zero/springboot/study/rabbitmq/config/SimpleConfig.class], could not be registered. A bean with that name has already been defined in class path resource [zero/springboot/study/rabbitmq/config/DirectConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+2019-04-26 15:35:04.476 [ERROR] [main] - org.springframework.test.context.TestContextManager-250 Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@644baf4a] to prepare test instance [zero.springboot.study.rabbitmq.RabbitmqApplicationTests@6dcd5639] 
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'queue' defined in class path resource [zero/springboot/study/rabbitmq/config/SimpleConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=simpleConfig; factoryMethodName=queue; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [zero/springboot/study/rabbitmq/config/SimpleConfig.class]] for bean 'queue': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=directConfig; factoryMethodName=queue; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [zero/springboot/study/rabbitmq/config/DirectConfig.class]] bound.
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:274)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+2019-04-26 15:42:14.235 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 13784 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-26 15:42:14.240 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-26 15:42:18.839 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-26 15:42:19.633 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-26 15:42:19.767 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#37045b48:0/SimpleConnection@79e7188e [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 56615] 
+2019-04-26 15:42:20.175 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 7.1 seconds (JVM running for 8.697) 
+2019-04-26 15:42:20.645 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.DirectSender-34 DirectReceiver发送消息：User(name=青, pass=111111) 
+2019-04-26 15:42:20.689 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.DirectSender-38 DirectReceiver发送消息：hello qing 
+2019-04-26 15:42:20.700 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=7111410d-6501-4122-b8e7-a19af4d872bc],确认结果：true,失败原因：null 
+2019-04-26 15:42:20.712 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-26 15:42:20.735 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.DirectReceiver-33 DirectReceiver收到消息：User(name=青, pass=111111) 
+2019-04-26 15:42:20.742 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:20.752 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.DirectReceiver-50 收到消息：hello qing 
+2019-04-26 15:42:20.760 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:20.768 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.033 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.039 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.055 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.063 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.077 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.081 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.099 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.103 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.135 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.143 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:21.162 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:21.180 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.181 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.181 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.181 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.182 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.182 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.183 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:21.188 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-26 15:42:50.391 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 12984 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-26 15:42:50.396 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-26 15:42:54.534 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-26 15:42:55.357 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-26 15:42:55.480 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#41eb94bc:0/SimpleConnection@34208baa [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 56649] 
+2019-04-26 15:42:55.841 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.488 seconds (JVM running for 8.212) 
+2019-04-26 15:42:56.170 [INFO ] [main] - zero.springboot.study.rabbitmq.simple.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-26 15:42:56.211 [INFO ] [main] - zero.springboot.study.rabbitmq.simple.HelloSender-37 发送消息：hello qing 
+2019-04-26 15:42:56.220 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateReturnCallback-39 消息主体 message : (Body:'[B@6914c713(byte[117])' MessageProperties [headers={spring_returned_message_correlation=8bf6a890-7fb0-492b-a54b-76c4da8a5ddc}, contentType=application/x-java-serialized-object, contentLength=0, receivedDeliveryMode=PERSISTENT, priority=0, deliveryTag=0]) 
+2019-04-26 15:42:56.221 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateReturnCallback-40 消息主体 message : 312 
+2019-04-26 15:42:56.222 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateReturnCallback-41 描述：NO_ROUTE 
+2019-04-26 15:42:56.222 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateReturnCallback-42 消息使用的交换器 exchange :  
+2019-04-26 15:42:56.222 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateReturnCallback-43 消息使用的路由键 routing : hello 
+2019-04-26 15:42:56.224 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=8bf6a890-7fb0-492b-a54b-76c4da8a5ddc],确认结果：true,失败原因：null 
+2019-04-26 15:42:56.235 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-26 15:42:56.252 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:56.257 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1] - zero.springboot.study.rabbitmq.simple.HelloReceiver-50 收到消息：hello qing 
+2019-04-26 15:42:56.687 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:56.694 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:56.716 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:56.719 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:56.737 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:56.741 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:56.758 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:56.761 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:57.261 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:57.267 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:57.806 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:57.812 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-26 15:42:57.833 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-26 15:42:57.839 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.839 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.839 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.840 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.840 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.840 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.840 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-26 15:42:57.842 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 

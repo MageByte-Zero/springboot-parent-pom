@@ -1,0 +1,551 @@
+2019-04-23 11:51:50.394 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 204 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 11:51:50.403 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 11:51:54.480 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 11:51:55.271 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 11:51:55.378 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#30ca0779:0/SimpleConnection@6d672bd4 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59908] 
+2019-04-23 11:51:55.519 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.165 seconds (JVM running for 7.655) 
+2019-04-23 11:51:55.974 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 11:51:55.989 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 11:51:55.993 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 11:51:55.999 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 11:51:56.006 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:03:57.650 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 13364 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:03:57.666 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:04:02.387 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:04:03.134 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:04:03.332 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#56dfab87:0/SimpleConnection@1d0cac30 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 60534] 
+2019-04-23 12:04:03.460 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 8.445 seconds (JVM running for 12.464) 
+2019-04-23 12:04:04.099 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:04:04.180 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:04:04.183 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:04:04.188 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:04:04.190 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:30:10.568 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 11832 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:30:10.571 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:30:14.252 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:30:15.066 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:30:15.186 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#77049094:0/SimpleConnection@6436e181 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 52470] 
+2019-04-23 12:30:15.333 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.841 seconds (JVM running for 7.304) 
+2019-04-23 12:30:15.895 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:30:16.070 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:30:16.100 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:30:16.103 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:30:16.117 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:30:16.122 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:31:42.233 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 2672 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:31:42.237 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:31:45.903 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:31:46.651 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:31:46.760 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#3af7d855:0/SimpleConnection@5ae1c281 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 52477] 
+2019-04-23 12:31:46.895 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.68 seconds (JVM running for 7.084) 
+2019-04-23 12:31:46.914 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:31:46.919 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:31:47.195 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:31:47.227 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:31:47.244 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:31:48.229 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:31:48.235 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:31:48.237 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:37:20.690 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 17916 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:37:20.701 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:37:24.439 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:37:25.253 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:37:25.362 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#4b6e1c0:0/SimpleConnection@321ca237 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 52542] 
+2019-04-23 12:37:25.497 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.945 seconds (JVM running for 7.386) 
+2019-04-23 12:37:25.651 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:37:27.039 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:37:27.123 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:37:27.192 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:37:27.195 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:37:27.223 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:37:27.224 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:42:32.079 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 20028 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:42:32.086 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:42:35.832 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:42:36.679 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:42:36.786 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#446626a7:0/SimpleConnection@4041739c [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 52619] 
+2019-04-23 12:42:36.930 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.896 seconds (JVM running for 8.032) 
+2019-04-23 12:42:36.949 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:42:36.954 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:42:36.956 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:42:37.315 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:42:37.340 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:42:37.357 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:42:38.343 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:42:38.349 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:42:38.352 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:59:47.426 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 32 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 12:59:47.430 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 12:59:51.146 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 12:59:51.880 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 12:59:54.977 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#51a6cc2a:0/SimpleConnection@29c17c3d [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 62667] 
+2019-04-23 12:59:55.110 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 8.716 seconds (JVM running for 10.122) 
+2019-04-23 12:59:55.140 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.144 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.147 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.148 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.441 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.464 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-37 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 12:59:55.469 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 12:59:55.486 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 12:59:56.474 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 12:59:56.482 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 12:59:56.484 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 13:03:07.685 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 7404 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 13:03:07.688 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 13:03:11.357 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 13:03:12.113 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 13:03:12.214 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#1716e8c5:0/SimpleConnection@11b32a14 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 62686] 
+2019-04-23 13:03:12.648 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.978 seconds (JVM running for 9.08) 
+2019-04-23 13:03:12.665 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.671 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.673 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.674 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.676 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.961 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.984 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-37 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 13:03:12.984 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-27 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:03:12.998 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 13:03:13.986 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 13:03:13.992 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 13:03:13.992 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 13:14:50.186 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 4104 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 13:14:50.190 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 13:14:54.017 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 13:14:54.806 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 13:14:54.930 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#15b642b9:0/SimpleConnection@34208baa [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 62753] 
+2019-04-23 13:14:55.068 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.813 seconds (JVM running for 8.343) 
+2019-04-23 13:14:55.419 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 13:14:55.452 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-37 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 13:14:55.469 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 13:14:55.483 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 13:14:55.488 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 13:14:55.494 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 13:14:55.497 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:10:43.671 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 23316 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:10:43.676 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:10:47.358 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:10:48.146 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:10:48.285 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#3f736a16:0/SimpleConnection@1fd7a37 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63035] 
+2019-04-23 14:10:48.427 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.795 seconds (JVM running for 8.338) 
+2019-04-23 14:10:48.729 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:10:48.767 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-37 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:10:48.774 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:10:48.791 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:10:48.794 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:10:48.799 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:10:48.801 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:12:22.729 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 12696 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:12:22.733 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:12:26.649 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:12:27.399 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:12:27.532 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#518bfd90:0/SimpleConnection@3fc7c734 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63046] 
+2019-04-23 14:12:27.666 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.95 seconds (JVM running for 8.295) 
+2019-04-23 14:12:27.686 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:12:27.951 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-30 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:12:27.976 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-37 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:12:27.977 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:12:27.993 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:12:28.982 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:12:28.987 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:12:28.989 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:18:57.746 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 7668 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:18:57.749 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:19:01.540 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:19:02.277 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:19:02.378 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#51ec2856:0/SimpleConnection@3332c7a5 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63111] 
+2019-04-23 14:19:02.506 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.86 seconds (JVM running for 9.379) 
+2019-04-23 14:19:02.835 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:19:02.874 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=a1a0e211-24ac-4c2a-98f5-dc6b8fdd6618],确认结果：true,失败原因：null 
+2019-04-23 14:19:02.896 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:19:02.908 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:19:02.915 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:19:02.921 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:19:02.924 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:39:04.360 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 13780 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:39:04.364 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:39:08.105 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:39:08.924 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:39:09.041 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#435e60ff:0/SimpleConnection@1163a27 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63293] 
+2019-04-23 14:39:09.187 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.822 seconds (JVM running for 7.577) 
+2019-04-23 14:39:09.552 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:39:09.600 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=a291d041-9748-4b98-9121-e4f83c35797d],确认结果：true,失败原因：null 
+2019-04-23 14:39:09.608 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:39:09.616 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:39:09.623 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-50 收到消息：hello qing 
+2019-04-23 14:39:09.633 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:39:10.627 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:39:10.632 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:39:10.635 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:49:47.597 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 6564 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:49:47.601 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:49:51.647 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:49:52.412 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:49:52.534 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#3ed7821:0/SimpleConnection@50ab56e2 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63529] 
+2019-04-23 14:49:52.686 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.134 seconds (JVM running for 8.774) 
+2019-04-23 14:49:52.994 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:49:53.038 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=09f85a4a-ac63-402a-87b8-438aaa27e946],确认结果：true,失败原因：null 
+2019-04-23 14:49:53.046 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:49:53.058 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-51 收到消息：hello qing 
+2019-04-23 14:49:53.060 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:49:53.065 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:49:53.067 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:49:53.073 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:49:54.063 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:49:54.068 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:49:54.069 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:49:54.071 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:54:36.767 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 7096 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:54:36.771 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:54:40.518 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:54:41.312 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:54:41.433 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#529c2a9a:0/SimpleConnection@58a84a12 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63575] 
+2019-04-23 14:54:41.591 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-51 收到消息：115,100,102,103 
+2019-04-23 14:54:41.603 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.884 seconds (JVM running for 8.09) 
+2019-04-23 14:54:41.983 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:54:42.012 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-37 发送消息：hello qing 
+2019-04-23 14:54:42.017 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=8d38c649-7280-42de-8d78-60a290d6f29d],确认结果：true,失败原因：null 
+2019-04-23 14:54:42.029 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:54:42.062 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:54:43.055 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:54:43.063 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:54:44.058 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:54:44.063 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:54:44.064 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:54:44.066 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:55:38.889 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 9824 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:55:38.945 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:55:43.161 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:55:44.042 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:55:44.163 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#4375b013:0/SimpleConnection@9accff0 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63582] 
+2019-04-23 14:55:44.336 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.38 seconds (JVM running for 9.335) 
+2019-04-23 14:55:44.699 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:55:44.732 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-37 发送消息：hello qing 
+2019-04-23 14:55:44.740 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=9f537298-b837-48ed-9235-121fef6edc81],确认结果：true,失败原因：null 
+2019-04-23 14:55:44.751 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:55:44.769 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-51 收到消息：hello qing 
+2019-04-23 14:55:45.037 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:56:00.068 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:56:00.071 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:56:00.077 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:56:01.069 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:56:01.076 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:56:01.076 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:56:01.078 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:57:04.397 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 25488 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:57:04.447 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:57:08.402 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:57:09.274 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:57:09.393 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#288ca5f0:0/SimpleConnection@14c93774 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63591] 
+2019-04-23 14:57:09.564 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.128 seconds (JVM running for 8.656) 
+2019-04-23 14:57:09.926 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:57:09.960 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-37 发送消息：hello qing 
+2019-04-23 14:57:09.968 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=70914166-58ad-4b84-85d1-f1a3a039085d],确认结果：true,失败原因：null 
+2019-04-23 14:57:09.978 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:57:09.992 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-51 收到消息：hello qing 
+2019-04-23 14:57:09.997 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-33 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:57:10.007 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:57:10.010 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:57:10.018 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:57:10.996 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:57:11.002 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:57:11.002 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:57:11.003 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:58:39.169 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 23060 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:58:39.173 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:58:43.377 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:58:44.113 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:58:44.244 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#5cbe2654:0/SimpleConnection@2f10f633 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 63603] 
+2019-04-23 14:58:44.387 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.257 seconds (JVM running for 9.506) 
+2019-04-23 14:58:44.649 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:58:44.683 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-37 发送消息：hello qing 
+2019-04-23 14:58:44.691 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=a96f8884-8dd4-4564-8d63-c18ce1ad6043],确认结果：true,失败原因：null 
+2019-04-23 14:58:44.700 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:58:44.717 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-34 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:58:44.719 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:58:44.721 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-52 收到消息：hello qing 
+2019-04-23 14:58:44.723 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:58:44.728 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:58:44.729 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:59:29.500 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 10740 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 14:59:29.503 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 14:59:33.450 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 14:59:34.208 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 14:59:34.335 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#712cfb63:0/SimpleConnection@54b2fc58 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59485] 
+2019-04-23 14:59:34.459 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.97 seconds (JVM running for 7.384) 
+2019-04-23 14:59:34.785 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-33 发送消息：User(name=青, pass=111111) 
+2019-04-23 14:59:34.825 [INFO ] [main] - zero.springboot.study.rabbitmq.direct.HelloSender-37 发送消息：hello qing 
+2019-04-23 14:59:34.833 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：CorrelationData [id=5e6d16d1-94e9-483d-af90-d90ddc07e5c2],确认结果：true,失败原因：null 
+2019-04-23 14:59:34.845 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 14:59:34.866 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-34 收到消息：User(name=青, pass=111111) 
+2019-04-23 14:59:34.879 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 14:59:34.882 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] - zero.springboot.study.rabbitmq.direct.HelloReceiver-52 收到消息：hello qing 
+2019-04-23 14:59:34.885 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 14:59:34.894 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 14:59:34.898 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:19:58.869 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 21900 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:19:58.872 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:20:03.710 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:20:04.453 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:20:04.572 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#671d1157:0/SimpleConnection@49e2b3c5 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59594] 
+2019-04-23 15:20:04.794 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 7.073 seconds (JVM running for 10.529) 
+2019-04-23 15:20:05.114 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:20:05.141 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:20:05.149 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:20:05.729 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:20:05.735 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:20:05.755 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:20:05.758 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:20:06.154 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:20:06.160 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:20:06.161 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:20:06.162 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:20:06.162 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:22:31.052 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 10488 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:22:31.056 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:22:35.372 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:22:36.113 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:22:36.232 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#16e7b402:0/SimpleConnection@1d06f16f [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59610] 
+2019-04-23 15:22:36.432 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.442 seconds (JVM running for 9.264) 
+2019-04-23 15:22:36.816 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-29 主题发送 : hi, i am message all 
+2019-04-23 15:22:36.845 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:22:36.868 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:22:36.870 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:22:37.367 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:22:37.373 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:22:37.393 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:22:37.398 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:22:37.873 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:22:37.880 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:22:37.880 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:22:37.881 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:22:37.882 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:25:09.451 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 23472 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:25:09.455 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:25:14.329 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:25:15.089 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:25:15.230 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#2a369e14:0/SimpleConnection@d611f1c [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59620] 
+2019-04-23 15:25:15.431 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.959 seconds (JVM running for 9.546) 
+2019-04-23 15:25:15.820 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-29 主题发送 : hi, i am message all 
+2019-04-23 15:25:15.852 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:25:15.876 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:25:19.294 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:25:19.295 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:25:19.303 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:25:20.295 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:25:20.301 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:25:20.302 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:25:20.308 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:25:20.308 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:25:20.308 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:25:20.310 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:32:02.377 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 8624 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:32:02.380 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:32:06.458 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:32:07.210 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:32:07.333 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#671d1157:0/SimpleConnection@14c141c0 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59653] 
+2019-04-23 15:32:07.555 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.115 seconds (JVM running for 8.956) 
+2019-04-23 15:32:07.882 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-29 主题发送 : hi, i am message all 
+2019-04-23 15:32:07.910 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:32:10.510 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:32:10.512 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:32:10.514 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:32:10.520 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:32:11.510 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:32:11.516 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:32:11.517 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:32:11.523 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:32:11.524 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:32:11.524 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:32:11.525 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:33:56.003 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 18092 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:33:56.016 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:34:00.817 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:34:01.568 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:34:01.689 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#6f94fb9d:0/SimpleConnection@61874b9d [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59665] 
+2019-04-23 15:34:01.910 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.985 seconds (JVM running for 9.48) 
+2019-04-23 15:34:01.942 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:34:02.231 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-38 主题发送 : hi, i am message 1 
+2019-04-23 15:34:02.251 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message 1 
+2019-04-23 15:34:02.257 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:34:06.051 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-15 Topic Receiver1  hi, i am message 1:  
+2019-04-23 15:34:06.061 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:34:06.062 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:34:06.069 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:34:07.055 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:34:07.060 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:34:08.053 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:34:08.060 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:34:08.061 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:34:08.061 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:34:08.063 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:36:05.169 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 6292 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:36:05.174 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:36:09.127 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:36:09.879 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:36:10.056 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#366d8b97:0/SimpleConnection@4fc165f6 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 59685] 
+2019-04-23 15:36:10.238 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-15 Topic Receiver1  hi, i am message 1:  
+2019-04-23 15:36:10.253 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message all 
+2019-04-23 15:36:10.256 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am message 1 
+2019-04-23 15:36:10.268 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.094 seconds (JVM running for 8.513) 
+2019-04-23 15:36:10.619 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-47 主题发送 : hi, i am messages 2 
+2019-04-23 15:36:10.641 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:36:10.646 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 Topic Receiver2  : hi, i am messages 2 
+2019-04-23 15:36:10.661 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:36:11.194 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:36:11.201 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:36:11.245 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:36:11.252 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:36:11.649 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:36:11.653 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:36:11.654 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:36:11.655 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:36:11.657 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:49:06.776 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 16236 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:49:06.784 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:49:11.110 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:49:11.883 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:49:11.992 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#2a369e14:0/SimpleConnection@1d98daa0 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 65344] 
+2019-04-23 15:49:12.294 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.906 seconds (JVM running for 9.418) 
+2019-04-23 15:49:12.783 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-29 主题发送 : hi, i am message 1 
+2019-04-23 15:49:12.823 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:49:12.847 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:12.847 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-15 topic.message Receiver1  hi, i am message 1:  
+2019-04-23 15:49:12.847 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 topic.messages Receiver2  : hi, i am message 1 
+2019-04-23 15:49:13.133 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:13.140 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:13.850 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:13.856 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:14.851 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:14.855 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:14.855 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:14.855 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:14.856 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:49:47.662 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 17372 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:49:47.666 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:49:51.659 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:49:52.583 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:49:52.710 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#10c72a6f:0/SimpleConnection@1f43cab7 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 65349] 
+2019-04-23 15:49:52.924 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-15 topic.message Receiver1  hi, i am message 1:  
+2019-04-23 15:49:52.941 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 topic.messages Receiver2  : hi, i am message 1 
+2019-04-23 15:49:52.959 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.22 seconds (JVM running for 8.474) 
+2019-04-23 15:49:53.270 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-38 主题发送 : hi, i am messages 2 
+2019-04-23 15:49:53.296 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:49:53.295 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-15 topic.messages Receiver2  : hi, i am messages 2 
+2019-04-23 15:49:53.312 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:53.875 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:53.882 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:53.931 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:53.939 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:49:54.297 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:49:54.302 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:54.303 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:54.303 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:49:54.306 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:52:09.104 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 16452 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:52:09.108 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:52:13.312 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:52:14.128 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:52:14.253 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#2dd0f797:0/SimpleConnection@71179b6f [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 65369] 
+2019-04-23 15:52:14.472 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.344 seconds (JVM running for 8.991) 
+2019-04-23 15:52:14.843 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-29 主题发送 : hi, i am message 1 
+2019-04-23 15:52:14.882 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:52:14.907 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:52:14.918 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-20 topic.message Receiver1  hi, i am message 1:  
+2019-04-23 15:52:14.921 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 topic.messages Receiver2  : hi, i am message 1 
+2019-04-23 15:52:15.411 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:52:15.418 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:52:15.921 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:52:15.925 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:52:15.927 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:52:15.931 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:52:15.932 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:52:15.932 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:52:15.932 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:54:01.341 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 21732 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 15:54:01.346 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 15:54:05.354 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 15:54:06.095 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 15:54:06.219 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#6f94fb9d:0/SimpleConnection@5af64ce0 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 65377] 
+2019-04-23 15:54:06.398 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 5.988 seconds (JVM running for 8.422) 
+2019-04-23 15:54:06.695 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-38 主题发送 : hi, i am messages 2 
+2019-04-23 15:54:06.721 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 15:54:06.747 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:54:06.750 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 topic.messages Receiver2  : hi, i am messages 2 
+2019-04-23 15:54:07.340 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:54:07.345 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:54:07.362 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:54:07.366 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 15:54:07.754 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 15:54:07.759 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:54:07.760 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:54:07.761 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 15:54:07.763 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:18:04.272 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 24640 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 16:18:04.276 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 16:18:08.266 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:18:09.127 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 16:18:09.258 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#2c88a3e8:0/SimpleConnection@5974b233 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 49849] 
+2019-04-23 16:18:09.465 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.358 seconds (JVM running for 9.269) 
+2019-04-23 16:18:09.745 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-26 主题发送 : hi, i am message All 
+2019-04-23 16:18:09.773 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 16:18:09.798 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 topic.messages Receiver2  : hi, i am message All 
+2019-04-23 16:18:10.126 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:18:10.403 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:18:10.407 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:18:10.426 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:18:10.430 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:18:10.800 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:18:10.805 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:18:10.806 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:18:10.807 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:18:10.807 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:19:13.481 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 2908 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 16:19:13.486 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 16:19:17.469 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:19:18.205 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 16:19:18.539 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#3722c145:0/SimpleConnection@654e6a90 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 49919] 
+2019-04-23 16:19:18.802 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.317 seconds (JVM running for 8.798) 
+2019-04-23 16:19:19.137 [INFO ] [main] - zero.springboot.study.rabbitmq.topic.TopicSender-35 主题发送 : hi, i am message 1 
+2019-04-23 16:19:19.169 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 16:19:19.192 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:19:19.200 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver-20 topic.message Receiver1  hi, i am message 1:  
+2019-04-23 16:19:19.200 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.topic.TopicReceiver2-20 topic.messages Receiver2  : hi, i am message 1 
+2019-04-23 16:19:19.729 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:19:19.735 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:19:20.204 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:19:20.210 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:19:21.205 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:19:21.210 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:19:21.211 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:19:21.212 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:19:21.212 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:51:27.238 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-50 Starting RabbitmqApplicationTests on PF0ETHKL with PID 25000 (started by lijianqing in E:\project_code\springboot-parent-pom\rabbitmq) 
+2019-04-23 16:51:27.242 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-675 No active profile set, falling back to default profiles: default 
+2019-04-23 16:51:31.409 [INFO ] [main] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-171 Initializing ExecutorService 'applicationTaskExecutor' 
+2019-04-23 16:51:32.163 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-460 Attempting to connect to: [172.16.90.111:5672] 
+2019-04-23 16:51:32.276 [INFO ] [main] - org.springframework.amqp.rabbit.connection.CachingConnectionFactory-496 Created new connection: rabbitConnectionFactory#709ed6f3:0/SimpleConnection@314a31b0 [delegate=amqp://fengsibo@172.16.90.111:5672//crawl, localPort= 51747] 
+2019-04-23 16:51:32.637 [INFO ] [main] - zero.springboot.study.rabbitmq.RabbitmqApplicationTests-59 Started RabbitmqApplicationTests in 6.475 seconds (JVM running for 9.53) 
+2019-04-23 16:51:32.960 [INFO ] [AMQP Connection 172.16.90.111:5672] - zero.springboot.study.rabbitmq.config.RabbitTemplateConfirmCallback-38 消息唯一标识：null,确认结果：true,失败原因：null 
+2019-04-23 16:51:32.992 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:32.997 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] - zero.springboot.study.rabbitmq.fanout.FanoutReceiverB-20 fanout Receiver B  : hi, fanout msg  
+2019-04-23 16:51:33.000 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] - zero.springboot.study.rabbitmq.fanout.FanoutReceiverC-20 fanout Receiver C  : hi, fanout msg  
+2019-04-23 16:51:33.001 [INFO ] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] - zero.springboot.study.rabbitmq.fanout.FanoutReceiverA-20 fanout Receiver A  : hi, fanout msg  
+2019-04-23 16:51:33.502 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:33.513 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:34.004 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:34.008 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:35.002 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:35.307 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:36.003 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:36.007 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:36.601 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:36.606 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-586 Waiting for workers to finish. 
+2019-04-23 16:51:36.625 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-589 Successfully waited for workers to finish. 
+2019-04-23 16:51:36.630 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.631 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.632 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.632 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.632 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.633 [INFO ] [Thread-2] - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer-1226 Shutdown ignored - container is not active already 
+2019-04-23 16:51:36.633 [INFO ] [Thread-2] - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor-208 Shutting down ExecutorService 'applicationTaskExecutor' 
