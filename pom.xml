@@ -16,6 +16,7 @@
         <module>rabbitmq</module>
         <module>dubbo</module>
         <module>async</module>
+        <module>websocket-simple</module>
     </modules>
 
 
