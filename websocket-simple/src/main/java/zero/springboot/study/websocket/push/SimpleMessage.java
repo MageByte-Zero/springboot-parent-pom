@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 @Data
 public class SimpleMessage {
-        private String publisher;
+        private String userId;
         private String content;
         private LocalDateTime createTime;
 }

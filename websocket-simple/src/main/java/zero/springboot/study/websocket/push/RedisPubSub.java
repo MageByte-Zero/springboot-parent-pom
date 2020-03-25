@@ -22,7 +22,7 @@ public class RedisPubSub {
     @Scheduled(initialDelay = 5000, fixedDelay = 10000)
     private void schedule() {
         log.info("publish message");
-        publish("admin", "hey you must go now!");
+        publish("221", "hey you must go now!");
     }
 
     /**
@@ -31,12 +31,12 @@ public class RedisPubSub {
      * @param publisher
      * @param message
      */
-    public void publish(String publisher, String content) {
-        log.info("message send {} by {}", content, publisher);
+    public void publish(String userId, String content) {
+        log.info("message send {} to {}", content, userId);
         SimpleMessage pushMsg = new SimpleMessage();
         pushMsg.setContent(content);
         pushMsg.setCreateTime(LocalDateTime.now());
-        pushMsg.setPublisher(publisher);
+        pushMsg.setUserId(userId);
         redisTemplate.convertAndSend(topic.getTopic(), pushMsg);
     }
 }

@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-@ServerEndpoint("/test/{code}")
+@ServerEndpoint("/webSocket/{userId}")
 @Component
 @Slf4j
 public class MyWebsocketServer {
@@ -22,10 +22,10 @@ public class MyWebsocketServer {
     private static Map<String, Session> clients = new ConcurrentHashMap<>();
 
     @OnOpen
-    public void onOpen(Session session, @PathParam("code") String code) {
-        log.info("有新的客户端连接了: {}, code = {}", session.getId(), code);
+    public void onOpen(@PathParam("userId") String userId, Session session) {
+        log.info("有新的客户端连接了: session id = {}, userId = {}", session.getId(), userId);
         //将新用户存入在线的组
-        clients.put(session.getId(), session);
+        clients.put(userId, session);
     }
 
     /**
@@ -34,10 +34,10 @@ public class MyWebsocketServer {
      * @param session session
      */
     @OnClose
-    public void onClose(Session session) {
-        log.info("有用户断开了, id为:{}", session.getId());
+    public void onClose(@PathParam("userId") String userId, Session session) {
+        log.info("有用户断开了, id为:{}", userId);
         //将掉线的用户移除在线的组里
-        clients.remove(session.getId());
+        clients.remove(userId);
     }
 
     /**
@@ -56,9 +56,9 @@ public class MyWebsocketServer {
      * @param message 消息对象
      */
     @OnMessage
-    public void onMessage(String message) {
+    public void onMessage(String message, @PathParam("userId") String userId) {
         log.info("服务端收到客户端发来的消息: {}", message);
-        this.sendAll(message);
+        this.sendMessageToClient(userId, message);
     }
 
     /**
@@ -67,14 +67,14 @@ public class MyWebsocketServer {
      * @param message
      * @return
      */
-    public boolean sendMessageToClient(String sessionId, String message) {
-        Session session = clients.get(sessionId);
+    public boolean sendMessageToClient(String userId, String message) {
+        Session session = clients.get(userId);
         if (Objects.isNull(session)) {
-            log.info("session is null, sessionId = {}", sessionId);
+            log.info("session is null, userId = {}", userId);
             return false;
         }
         if (!session.isOpen()) {
-            log.info("session is closed, sessionId = {}", sessionId);
+            log.info("session is closed, userId = {}", userId);
             return false;
         }
         log.info("start send message");
