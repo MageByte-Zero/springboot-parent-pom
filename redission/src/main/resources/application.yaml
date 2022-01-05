@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /redis
+  port: 9008
+spring:
+  application:
+    name: redission
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    ssl: false
+
