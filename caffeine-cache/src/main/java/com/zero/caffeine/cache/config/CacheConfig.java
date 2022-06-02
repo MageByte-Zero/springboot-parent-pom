@@ -29,7 +29,7 @@ public class CacheConfig {
                 // 设置最后一次写入或访问后经过固定时间过期
                 .expireAfterAccess(7, TimeUnit.DAYS)
                 // 初始的缓存空间大小
-                .initialCapacity(1024)
+                .initialCapacity(500)
                 .executor(cacheExecutor)
                 .removalListener(((key, value, cause) -> log.info("key:{} removed, removalCause:{}.", key, cause.name())))
                 // 缓存的最大条数
