@@ -18,6 +18,7 @@
         <module>async</module>
         <module>websocket-simple</module>
         <module>redission</module>
+        <module>caffeine-cache</module>
     </modules>
 
 
