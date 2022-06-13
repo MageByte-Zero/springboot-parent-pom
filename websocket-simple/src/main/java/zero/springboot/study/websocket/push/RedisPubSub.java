@@ -26,10 +26,10 @@ public class RedisPubSub {
     }
 
     /**
-     * 推送消息到 topic
-     *
-     * @param publisher
-     * @param message
+     * 推送消息到 topic,对应的监听器监听消息，并判断当前节点是否存有 userID 对应的连接，有则推送消息给客户端
+     * @see MessageSubscriber#onMessage(zero.springboot.study.websocket.push.SimpleMessage, java.lang.String)
+     * @param userId
+     * @param content
      */
     public void publish(String userId, String content) {
         log.info("message send {} to {}", content, userId);

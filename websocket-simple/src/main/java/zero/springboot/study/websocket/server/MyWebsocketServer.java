@@ -11,7 +11,11 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
-
+/**
+ * websocket处理创建、推送、接受、关闭类
+ * ServerEndpoint 定义websocket的监听连接地址
+ *
+ */
 @ServerEndpoint("/webSocket/{userId}")
 @Component
 @Slf4j
@@ -63,7 +67,7 @@ public class MyWebsocketServer {
 
     /**
      * 发送消息给指定客户端
-     * @param sessionId
+     * @param userId
      * @param message
      * @return
      */

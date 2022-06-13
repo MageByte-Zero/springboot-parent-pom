@@ -46,8 +46,6 @@ public class RedisConfig {
 
     /**
      * 操作模板
-     *
-     * @param connectionFactory
      * @param jackson2JsonRedisSerializer
      * @return
      */
