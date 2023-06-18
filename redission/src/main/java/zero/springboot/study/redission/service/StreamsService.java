@@ -19,7 +19,6 @@ public class StreamsService {
 
     private static final String STREAM_NAME = "order:doubleJoy";
     private static final String GROUP_NAME = "pointsGroup";
-    private static final String CONSUMER_NAME = "pointsGroup";
 
     /**
      * 发送消息到队列头部
@@ -38,16 +37,15 @@ public class StreamsService {
     public void consumerMessage(String consumerName) {
         RStream<String, String> stream = redissonClient.getStream(STREAM_NAME);
 
-        stream.createGroup(GROUP_NAME, StreamMessageId.ALL);
+//        stream.createGroup(GROUP_NAME, StreamMessageId.ALL);
 
-        stream.readGroup(GROUP_NAME, consumerName, StreamReadGroupArgs.greaterThan(StreamMessageId.ALL));
+        Map<StreamMessageId, Map<String, String>> messages = stream.readGroup(GROUP_NAME, consumerName, StreamReadGroupArgs.greaterThan(StreamMessageId.ALL));
 
-        Map<StreamMessageId, Map<String, String>> messages = stream.readGroup("sensors_data", "consumer_1");
         for (Map.Entry<StreamMessageId, Map<String, String>> entry : messages.entrySet()) {
             Map<String, String> msg = entry.getValue();
             System.out.println(msg);
 
-            stream.ack("sensors_data", entry.getKey());
+            stream.ack(GROUP_NAME, entry.getKey());
         }
 
     }
