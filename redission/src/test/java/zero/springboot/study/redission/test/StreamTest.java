@@ -1,10 +1,13 @@
 package zero.springboot.study.redission.test;
 
+import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.redisson.api.PendingEntry;
+import org.redisson.api.StreamMessageId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -15,6 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @RunWith(SpringRunner.class)
@@ -28,7 +33,6 @@ public class StreamTest {
 
     @Before
     public void before() {
-        streamsService.createGroup(StreamsService.GROUP_NAME);
 
         for (int i = 1; i <= 10; i++) {
             HashMap<String, String> data = new HashMap<>(16);
@@ -41,14 +45,23 @@ public class StreamTest {
     }
 
     @Test
-    public void testSendAndConsumer() {
-        new Thread(() -> {
-            for (Map<String, String> data: dataList)
-            streamsService.sendMessage(data);
-        }).start();
+    public void testCreateGroup() {
+        streamsService.createGroup(StreamsService.GROUP_NAME);
+    }
 
-        // 模拟两个消费者构成一个消费者组
-        new Thread(() -> {
+    @Test
+    public void testSendMessage() throws InterruptedException {
+        for (Map<String, String> data: dataList) {
+            streamsService.sendMessage(data);
+        }
+        TimeUnit.SECONDS.sleep(2);
+
+    }
+
+    @Test
+    public void testConsumerMessage() throws InterruptedException {
+//        streamsService.consumerMessage("consumer1");
+        CompletableFuture.runAsync(() -> {
             try {
                 streamsService.consumerMessage("consumer1");
             } catch (InterruptedException e) {
@@ -56,13 +69,20 @@ public class StreamTest {
             }
         });
 
-        new Thread(() -> {
+        CompletableFuture.runAsync(() -> {
             try {
                 streamsService.consumerMessage("consumer2");
             } catch (InterruptedException e) {
                 log.error("消费执行异常", e);
             }
         });
+        TimeUnit.SECONDS.sleep(20);
+    }
+
+    @Test
+    public void testListPending() {
+        List<PendingEntry> pendingEntries = streamsService.listPending(StreamMessageId.MIN, StreamMessageId.MAX, 10);
+        pendingEntries.forEach(pendingEntry -> log.info(JSON.toJSONString(pendingEntry)));
     }
 
     @After
