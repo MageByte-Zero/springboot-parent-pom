@@ -7,7 +7,7 @@ package com.zero.provider.impl;
 import com.google.common.collect.Lists;
 import com.zero.api.model.User;
 import com.zero.api.provider.UserProvider;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import java.util.List;
  * @ClassName UserProviderImpl
  * @date 2019/4/23 19:46
  */
-@Service(interfaceClass = UserProvider.class)
+@DubboService(interfaceClass = UserProvider.class)
 public class UserProviderImpl implements UserProvider {
     @Override
     public List<User> listUser() {

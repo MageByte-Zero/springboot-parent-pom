@@ -6,7 +6,7 @@ package com.zero.dubbo.consumer.service;
 
 import com.zero.api.model.User;
 import com.zero.api.provider.UserProvider;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +20,7 @@ import java.util.List;
 @Service
 public class UserService {
 
-    @Reference
+    @DubboReference
     private UserProvider userProvider;
 
     public List<User> listUser() {
