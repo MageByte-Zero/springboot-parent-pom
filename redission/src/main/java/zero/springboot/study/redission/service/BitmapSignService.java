@@ -61,6 +61,7 @@ public class BitmapSignService {
 
     /**
      * 获取 date 月份签到详情
+     *
      * @param userId
      * @param date
      * @return
@@ -79,6 +80,7 @@ public class BitmapSignService {
 
     /**
      * 连续签到次数
+     *
      * @param signDateList
      * @return
      */
@@ -105,6 +107,7 @@ public class BitmapSignService {
 
     /**
      * 获取 date 签到列表数据
+     *
      * @param userId
      * @param date
      * @return
@@ -122,7 +125,7 @@ public class BitmapSignService {
         List<SignDTO.SignDetailDTO> signDetailList = new ArrayList<>();
 
         // 从低位到高位进行遍历，为 0 表示未签到，为 1 表示已签到
-        for(int i = dayOfMonth; i > 0; i--) {
+        for (int i = dayOfMonth; i > 0; i--) {
             LocalDate localDate = date.withDayOfMonth(i);
 
             // 右移再左移，如果不等于自己说明最低位是 1，表示已签到
