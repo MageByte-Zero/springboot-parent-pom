@@ -78,6 +78,46 @@ public class BitmapSignService {
                 .setSignDetailList(signDateList);
     }
 
+
+    /**
+     * 统计总签到次数
+     *
+     * @param userId 用户 ID
+     * @param date 签到日期
+     * @return 月份内签到总数
+     */
+    public Long getSumSignCount(Integer userId, LocalDate date) {
+        String signKey = this.buildSignKey(userId, date);
+        RBitSet bitSet = redissonClient.getBitSet(signKey);
+        // BITCOUNT uid:sign:{uid}:{yyyyMM}
+        return bitSet.cardinality();
+    }
+
+    /**
+     * Set all bits to zero
+     *
+     * @param userId
+     * @param date
+     */
+    public void clear(Integer userId, LocalDate date) {
+        String signKey = this.buildSignKey(userId, date);
+        RBitSet bitSet = redissonClient.getBitSet(signKey);
+        bitSet.clear();
+    }
+
+    /**
+     * Deletes the object
+     *
+     * @param userId
+     * @param date
+     * @return
+     */
+    public boolean delete(Integer userId, LocalDate date) {
+        String signKey = this.buildSignKey(userId, date);
+        RBitSet bitSet = redissonClient.getBitSet(signKey);
+        return bitSet.delete();
+    }
+
     /**
      * 连续签到次数
      *
@@ -145,50 +185,11 @@ public class BitmapSignService {
     }
 
     /**
-     * 统计总签到次数
-     *
-     * @param userId
-     * @param date
-     * @return
-     */
-    private Long getSumSignCount(Integer userId, LocalDate date) {
-        String signKey = this.buildSignKey(userId, date);
-        RBitSet bitSet = redissonClient.getBitSet(signKey);
-        // BITCOUNT uid:sign:89757:202307
-        return bitSet.cardinality();
-    }
-
-    /**
-     * Set all bits to zero
-     *
-     * @param userId
-     * @param date
-     */
-    public void clear(Integer userId, LocalDate date) {
-        String signKey = this.buildSignKey(userId, date);
-        RBitSet bitSet = redissonClient.getBitSet(signKey);
-        bitSet.clear();
-    }
-
-    /**
-     * Deletes the object
-     *
-     * @param userId
-     * @param date
-     * @return
-     */
-    public boolean delete(Integer userId, LocalDate date) {
-        String signKey = this.buildSignKey(userId, date);
-        RBitSet bitSet = redissonClient.getBitSet(signKey);
-        return bitSet.delete();
-    }
-
-    /**
      * 构建 Redis key - uid:sign:{userId}:{yyyyMM}
      *
-     * @param userId
-     * @param date
-     * @return
+     * @param userId 用户 ID
+     * @param date 日期
+     * @return 构建 Redis key - uid:sign:{userId}:{yyyyMM}
      */
     private String buildSignKey(Integer userId, LocalDate date) {
         return String.format("uid:sign:%d:%s", userId, date.format(DATE_TIME_FORMATTER));

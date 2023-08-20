@@ -61,6 +61,11 @@ public class BitmapSignServiceTest {
         Assert.assertNotNull(signDetailInfo);
     }
 
+    @Test
+    public void testClear() {
+        bitmapSignService.clear(userId, threeSignDate);
+    }
+
 
     @Test
     public void testUnsign() {
@@ -91,15 +96,9 @@ public class BitmapSignServiceTest {
         RBitSet bitSet = redissonClient.getBitSet("bitset_len");
 
         // 设置一些示例数据
-        bitSet.set(0, false);
         bitSet.set(1, true);
         bitSet.set(2, true);
-        bitSet.set(3, false);
-
-        long signed = bitSet.getUnsigned(4, 0);
-        // 十进制转二进制
-        String binaryString = Long.toBinaryString(signed);
-        log.info("signed = {}, binaryString = {}", signed, binaryString);
+        bitSet.set(28, true);
 
         // 获取位集合的长度
         long bitSetLength = bitSet.length();
