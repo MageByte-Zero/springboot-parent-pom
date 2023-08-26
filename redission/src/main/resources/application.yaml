@@ -7,8 +7,11 @@ spring:
     name: redission
 
   redis:
-    host: 127.0.0.1
-    port: 6379
-    password: magebyte
-    ssl: false
+    # redission file 配置方式，可以注释 spring boot 默认的配置方式
+#    host: 127.0.0.1
+#    port: 6379
+#    password: magebyte
+#    ssl: false
+    redisson:
+      file: classpath:redisson-config.yaml
 
