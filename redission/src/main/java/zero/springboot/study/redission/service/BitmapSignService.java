@@ -32,7 +32,7 @@ public class BitmapSignService {
      *
      * @param userId
      * @param date
-     * @return
+     * @return true - if previous value was true, false - if previous value was false
      */
     public SignDTO doSign(Integer userId, LocalDate date) {
         //获取日期对应的天，从 0 开始，所以 - 1 作为 offset
