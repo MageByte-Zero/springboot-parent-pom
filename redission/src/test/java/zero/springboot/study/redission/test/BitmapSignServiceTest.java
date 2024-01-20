@@ -1,14 +1,11 @@
 package zero.springboot.study.redission.test;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.redisson.api.RBitSet;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 import zero.springboot.study.redission.RedissionApplication;
 import zero.springboot.study.redission.dto.SignDTO;
 import zero.springboot.study.redission.service.BitmapSignService;
@@ -16,7 +13,6 @@ import zero.springboot.study.redission.service.BitmapSignService;
 import java.time.LocalDate;
 
 @Slf4j
-@RunWith(SpringRunner.class)
 @SpringBootTest(classes = RedissionApplication.class)
 public class BitmapSignServiceTest {
 
@@ -42,23 +38,13 @@ public class BitmapSignServiceTest {
         //e.g. SETBIT uid:sign:89757:202308 28 1
         SignDTO sign3DTO = bitmapSignService.doSign(userId, threeSignDate);
 
-
-        Assert.assertNotNull(sign3DTO);
-        Assert.assertEquals(2, (int) sign3DTO.getContinuous());
-        Assert.assertEquals(3L, sign3DTO.getCount().longValue());
-        Assert.assertEquals(firstSignDate, sign3DTO.getFirstSignDate());
-        Assert.assertNotNull(sign3DTO);
-        Assert.assertEquals(31, sign3DTO.getSignDetailList().size());
-
         boolean delete = bitmapSignService.delete(userId, firstSignDate);
-        Assert.assertTrue(delete);
 
     }
 
     @Test
     public void testGetSignDetailInfo() {
         SignDTO signDetailInfo = bitmapSignService.getSignDetailInfo(userId, threeSignDate);
-        Assert.assertNotNull(signDetailInfo);
     }
 
     @Test

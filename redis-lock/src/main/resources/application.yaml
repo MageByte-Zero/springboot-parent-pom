@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /redis
+  port: 9011
+spring:
+  application:
+    name: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: magebyte
+    timeout: 6000
+    client-type: lettuce
+    lettuce:
+      pool:
+        max-active: 300
+        max-idle: 100
+        max-wait: 1000ms
+        min-idle: 5
+
+
+
+
+
+

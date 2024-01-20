@@ -1,18 +1,15 @@
 package zero.springboot.study.redission.test;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 import zero.springboot.study.redission.RedissionApplication;
 import zero.springboot.study.redission.service.HyperLogLogService;
 
 import java.util.ArrayList;
 
 @Slf4j
-@RunWith(SpringRunner.class)
 @SpringBootTest(classes = RedissionApplication.class)
 public class HyperLogLogTest {
 

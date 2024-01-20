@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /jedis
+  port: 9010
+spring:
+  application:
+    name: jedis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: magebyte
+    timeout: 6000
+    client-type: jedis
+    jedis:
+      pool:
+        max-active: 300
+        max-idle: 100
+        max-wait: 1000
+        min-idle: 5
+
+
+
+
+
+
