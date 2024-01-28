@@ -9,15 +9,10 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Redis 可重入分布式锁
+ * Redis 分布式锁
  * @author magebte
  */
 public class DistributedLock implements Lock {
-
-    /**
-     * 锁超时时间，默认 30 秒
-     */
-    protected long internalLockLeaseTime = 30000;
 
     /**
      * 标识 id

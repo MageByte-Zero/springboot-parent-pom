@@ -33,7 +33,7 @@ public class ReentrantDistributedLock implements Lock {
 
 
     /**
-     * Jedis 客户端
+     * Redis 客户端
      */
     private final StringRedisTemplate redisTemplate;
 
