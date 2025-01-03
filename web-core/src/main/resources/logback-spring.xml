@@ -113,13 +113,6 @@
 			<maxFileSize>200MB</maxFileSize>
 		</rollingPolicy>
 	</appender>
-	<!-- 输出指定目录的日志到frameworkAppender配置，同时指定日志输出级别为大于等于info，向root传递-->
-	<logger name="com.lls.framework.rpc.dubbo.aspect.DubboExceptionAspect" level="INFO">
-		<appender-ref ref="invokerLogAppender" />
-	</logger>
-	<logger name="com.lls.framework.web.aspect.BaseRestControllerAspect" level="INFO">
-		<appender-ref ref="invokerLogAppender" />
-	</logger>
 
 
 	<!-- 输出sql日志到指定sql.log文件 -->
@@ -156,12 +149,6 @@
 		<appender-ref ref="sqlAppender" />
 		<appender-ref ref="stdout" />
 	</logger>
-	<!-- 本项目定义Mapper接口的包 -->
-	<!--<logger name="com.lls.fk.service.mapper" level="DEBUG" additivity="false">
-		<appender-ref ref="sqlAppender" />
-		<appender-ref ref="stdout" />
-	</logger>-->
-	<!--sql日志打印定义  end -->
 
 	<root level="INFO">
 		<appender-ref ref="stdout" />

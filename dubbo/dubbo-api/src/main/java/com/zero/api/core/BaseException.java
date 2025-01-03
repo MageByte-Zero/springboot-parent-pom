@@ -6,7 +6,6 @@ package com.zero.api.core;
  * 自定义异常类
  * </strong>
  * @type BaseException.java
- * @author libai
  * @date 2018年10月13日 下午4:35:40
  * @version 1.0
  */

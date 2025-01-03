@@ -5,8 +5,6 @@ package zero.springboot.study.webcore.message;
  * 错误码枚举类：00-09=预留，10-49=系统类错误，50-89=业务类错误，90-99=预留数字
  * </strong>
  * @Type ResultCodeEnum
- * @author liubeicai
- * @date 2018/11/2 19:45
  * @version 1.0
  */
 public enum ResultCodeEnum {
@@ -61,8 +59,8 @@ public enum ResultCodeEnum {
     ERROR_CODE_10800("10800", "http请求失败"),
     ;
 
-    private String code;
-    private String message;
+    private final String code;
+    private final String message;
     ResultCodeEnum(String code, String message){
         this.code = code;
         this.message = message;
